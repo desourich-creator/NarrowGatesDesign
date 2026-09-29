@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Narrow Gates mark: a gold cross whose foot runs through the base of the navy tile -->
+  <!-- Narrow Gates mark: a gold cross whose foot runs through the base of the navy tile (on-dark variant) -->
   <defs><clipPath id="t"><rect width="64" height="64" rx="13"/></clipPath></defs>
   <g clip-path="url(#t)">
-    <rect width="64" height="64" fill="#0B1A30"/>
+    <rect width="64" height="64" fill="#17305A"/>
     <rect x="28.3" y="9.8" width="7.4" height="54.2" fill="#F4B63F"/>
     <rect x="12.5" y="21.9" width="39" height="6.6" fill="#F4B63F"/>
   </g>

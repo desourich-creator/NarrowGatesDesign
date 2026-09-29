@@ -13,6 +13,9 @@ Live site (once hosting is connected): https://narrowgatesdesign.com
 | `thank-you.html` | Page shown after someone sends the contact form |
 | `favicon.svg` | Logo / browser tab icon |
 
+Colors, fonts (Poppins), and the cross-and-gate logo follow the Narrow Gates Design brand concept.
+`images/mark-on-dark.svg` is the logo version for dark backgrounds.
+
 This is a plain HTML/CSS site with no build step, so it can be hosted anywhere.
 
 ## Hosting
