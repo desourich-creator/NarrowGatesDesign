@@ -1,0 +1,31 @@
+/* Floating "sample design" badge shown on every example site */
+.ngd-badge {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: calc(100% - 24px);
+  padding: 8px 8px 8px 14px;
+  background: #0B1A30;
+  color: #C9D2E0;
+  border-radius: 999px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  font: 400 13px/1.3 "Poppins", system-ui, sans-serif;
+}
+.ngd-badge img { width: 22px; height: 22px; flex: none; }
+.ngd-badge a {
+  flex: none;
+  background: #2E6BF0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 999px;
+}
+.ngd-badge a:hover { background: #1F56CF; }
+.in-frame .ngd-badge { display: none; }
+@media (max-width: 520px) { .ngd-badge span { display: none; } }

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ironworks Fitness | Sample by Narrow Gates Design</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sample-badge.css">
+  <script src="sample-badge.js"></script>
+  <style>
+    :root { --black: #0D0D0F; --panel: #17171B; --line: #2A2A30; --volt: #D4FF3A; --grey: #9A9AA3; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Inter", sans-serif; background: var(--black); color: #F2F2F2; line-height: 1.6; }
+    h1, h2, h3 { font-family: "Oswald", sans-serif; text-transform: uppercase; margin: 0 0 .3em; line-height: .95; letter-spacing: .01em; }
+    a { color: inherit; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    header { position: absolute; top: 0; left: 0; right: 0; z-index: 3; }
+    header .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 22px; padding-bottom: 22px; }
+    .brand { font-family: "Oswald", sans-serif; font-weight: 700; font-size: 1.6rem; letter-spacing: .06em; }
+    .brand span { color: var(--volt); }
+    nav { display: flex; gap: 28px; font-weight: 600; font-size: .9rem; text-transform: uppercase; letter-spacing: .08em; }
+    nav a { text-decoration: none; }
+    .join { background: var(--volt); color: var(--black); padding: 10px 20px; font-weight: 700; text-decoration: none; text-transform: uppercase; font-size: .9rem; letter-spacing: .06em; }
+    .hero { min-height: 92vh; display: flex; align-items: flex-end; padding: 140px 0 70px; position: relative; overflow: hidden;
+      background:
+        linear-gradient(to top, var(--black) 5%, transparent 60%),
+        repeating-linear-gradient(115deg, transparent 0 60px, rgba(212,255,58,.04) 60px 62px),
+        radial-gradient(ellipse at 75% 30%, #2B2B33, var(--black) 60%); }
+    .hero h1 { font-size: clamp(3.6rem, 13vw, 10rem); }
+    .hero h1 .outline { color: transparent; -webkit-text-stroke: 2px #F2F2F2; }
+    .hero h1 .volt { color: var(--volt); }
+    .hero p { max-width: 460px; color: #C7C7CE; font-size: 1.1rem; }
+    .hero-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 30px; flex-wrap: wrap; }
+    .btn { display: inline-block; background: var(--volt); color: var(--black); padding: 16px 30px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; text-decoration: none; }
+    .ticker-clip { overflow: hidden; padding: 16px 0; }
+    .ticker { background: var(--volt); color: var(--black); font-family: "Oswald", sans-serif; text-transform: uppercase; font-size: 1.4rem; white-space: nowrap; overflow: hidden; padding: 12px 0; transform: rotate(-1.5deg); margin: 10px -20px; }
+    section { padding: 90px 0; }
+    .label { color: var(--volt); font-weight: 600; text-transform: uppercase; letter-spacing: .16em; font-size: .8rem; }
+    h2 { font-size: clamp(2.4rem, 5vw, 4rem); }
+    .classes { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); margin-top: 30px; }
+    .cls { padding: 30px 26px 30px 0; border-bottom: 1px solid var(--line); }
+    .cls + .cls { padding-left: 26px; border-left: 1px solid var(--line); }
+    .cls h3 { font-size: 2rem; }
+    .cls p { color: var(--grey); margin: 0; }
+    table { width: 100%; border-collapse: collapse; margin-top: 30px; font-size: .95rem; }
+    th, td { text-align: left; padding: 14px 12px; border-bottom: 1px solid var(--line); }
+    th { font-family: "Oswald", sans-serif; text-transform: uppercase; font-weight: 500; color: var(--grey); letter-spacing: .06em; }
+    td b { color: var(--volt); font-weight: 600; }
+    .table-scroll { overflow-x: auto; }
+    .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 30px; }
+    .plan { background: var(--panel); padding: 32px; border: 1px solid var(--line); }
+    .plan.hot { background: var(--volt); color: var(--black); border-color: var(--volt); }
+    .plan .price { font-family: "Oswald", sans-serif; font-size: 3.2rem; line-height: 1; }
+    .plan .price small { font-size: 1rem; }
+    .plan ul { padding-left: 18px; margin: 18px 0 0; }
+    .plan:not(.hot) ul { color: #C7C7CE; }
+    footer { border-top: 1px solid var(--line); padding: 30px 24px 90px; text-align: center; color: var(--grey); font-size: .88rem; }
+    @media (max-width: 860px) {
+      nav { display: none; }
+      .classes, .plans { grid-template-columns: 1fr; }
+      .cls + .cls { padding-left: 0; border-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">IRON<span>WORKS</span></div>
+      <nav><a href="#classes">Classes</a><a href="#schedule">Schedule</a><a href="#plans">Membership</a></nav>
+      <a class="join" href="#plans">Join Now</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1><span class="outline">Stronger</span><br><span class="volt">Every</span> Day.</h1>
+      <div class="hero-row">
+        <p>Strength, conditioning, and coaching for every level. No egos, no gimmicks, just real results with a crew that has your back.</p>
+        <a href="#plans" class="btn">Claim a free week</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker-clip"><div class="ticker" aria-hidden="true">Strength &nbsp;&#9670;&nbsp; HIIT &nbsp;&#9670;&nbsp; Boxing &nbsp;&#9670;&nbsp; Mobility &nbsp;&#9670;&nbsp; Personal Training &nbsp;&#9670;&nbsp; Strength &nbsp;&#9670;&nbsp; HIIT &nbsp;&#9670;&nbsp; Boxing &nbsp;&#9670;&nbsp; Mobility</div></div>
+
+  <section id="classes">
+    <div class="wrap">
+      <p class="label">What we do</p>
+      <h2>Train your way</h2>
+      <div class="classes">
+        <div class="cls"><h3>Strength</h3><p>Barbell-based programming that builds real, lasting power.</p></div>
+        <div class="cls"><h3>Conditioning</h3><p>Fast, sweaty interval sessions to build your engine.</p></div>
+        <div class="cls"><h3>Coaching</h3><p>One-on-one training with a plan built around your goals.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" style="background:var(--panel)">
+    <div class="wrap">
+      <p class="label">This week</p>
+      <h2>Class schedule</h2>
+      <div class="table-scroll">
+        <table>
+          <tr><th>Time</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
+          <tr><td>6:00 AM</td><td><b>Strength</b></td><td>HIIT</td><td><b>Strength</b></td><td>HIIT</td><td><b>Strength</b></td><td>&mdash;</td></tr>
+          <tr><td>9:00 AM</td><td>Mobility</td><td>Boxing</td><td>Mobility</td><td>Boxing</td><td>Mobility</td><td><b>Team WOD</b></td></tr>
+          <tr><td>12:00 PM</td><td>HIIT</td><td><b>Strength</b></td><td>HIIT</td><td><b>Strength</b></td><td>HIIT</td><td>&mdash;</td></tr>
+          <tr><td>5:30 PM</td><td>Boxing</td><td>HIIT</td><td><b>Strength</b></td><td>Boxing</td><td>Open Gym</td><td>&mdash;</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <div class="wrap">
+      <p class="label">Membership</p>
+      <h2>Pick your plan</h2>
+      <div class="plans">
+        <div class="plan"><h3>Basic</h3><div class="price">$39<small>/mo</small></div><ul><li>Open gym access</li><li>Locker room</li></ul></div>
+        <div class="plan hot"><h3>Unlimited</h3><div class="price">$89<small>/mo</small></div><ul><li>All classes</li><li>Open gym access</li><li>Monthly check-in</li></ul></div>
+        <div class="plan"><h3>Coaching</h3><div class="price">$199<small>/mo</small></div><ul><li>4 personal sessions</li><li>Custom program</li><li>All classes</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>&copy; Ironworks Fitness &middot; 900 Industrial Way &middot; (555) 010-8800</footer>
+
+  <div class="ngd-badge"><img src="../favicon.svg" alt=""><span>Sample design by Narrow Gates Design &middot; fictional business</span><a href="../work.html">&larr; All examples</a></div>
+</body>
+</html>

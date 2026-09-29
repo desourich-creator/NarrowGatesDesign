@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Greenline Landscaping | Sample by Narrow Gates Design</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sample-badge.css">
+  <script src="sample-badge.js"></script>
+  <style>
+    :root { --forest: #1E3B2B; --leaf: #3F7D4E; --lime: #C8E26B; --sand: #F1EEE4; --stone: #5B6358; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "DM Sans", sans-serif; color: var(--forest); background: var(--sand); line-height: 1.55; }
+    h1, h2, h3 { margin: 0 0 .35em; line-height: 1.05; letter-spacing: -.02em; font-weight: 700; }
+    a { color: inherit; }
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 0 20px; }
+    header .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 20px; padding-bottom: 20px; gap: 20px; }
+    .brand { font-weight: 700; font-size: 1.3rem; display: flex; align-items: center; gap: 8px; }
+    .brand i { width: 26px; height: 26px; background: var(--leaf); border-radius: 0 60% 0 60%; display: inline-block; }
+    nav { display: flex; gap: 8px; }
+    nav a { text-decoration: none; padding: 8px 16px; border-radius: 999px; font-weight: 500; }
+    nav a:hover { background: #E3DFD2; }
+    nav a.cta { background: var(--forest); color: #fff; }
+    .bento {
+      display: grid; gap: 14px; padding-bottom: 90px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 180px;
+    }
+    .tile { border-radius: 26px; padding: 26px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; }
+    .t-hero { grid-column: span 2; grid-row: span 2; background: var(--forest); color: #fff; justify-content: space-between; }
+    .t-hero h1 { font-size: clamp(2.2rem, 4vw, 3.6rem); }
+    .t-hero p { color: #BFD1C4; max-width: 420px; margin: 0 0 18px; }
+    .btn { align-self: flex-start; background: var(--lime); color: var(--forest); font-weight: 700; text-decoration: none; padding: 12px 22px; border-radius: 999px; }
+    .t-photo { grid-column: span 2; grid-row: span 2; background:
+        linear-gradient(to top, rgba(20,40,28,.55), transparent 45%),
+        radial-gradient(ellipse 80% 40% at 50% 100%, #5E9E57 0 60%, transparent 61%),
+        radial-gradient(circle at 25% 55%, #2F6B3D 0 14%, transparent 15%),
+        radial-gradient(circle at 70% 48%, #3D7E47 0 18%, transparent 19%),
+        linear-gradient(180deg, #BFE0F2 0%, #E8F3D9 55%, #8DBF6E 56%, #6FA555 100%);
+      color: #fff; }
+    .t-photo span { font-weight: 500; }
+    .t-stat { background: var(--lime); }
+    .t-stat b { font-size: 3rem; line-height: 1; }
+    .t-svc { background: #fff; }
+    .t-svc h3 { font-size: 1.3rem; }
+    .t-svc p { margin: 0; color: var(--stone); font-size: .95rem; }
+    .t-svc .num { position: absolute; top: 22px; left: 26px; font-weight: 700; color: var(--leaf); }
+    .t-wide { grid-column: span 2; background: var(--leaf); color: #fff; }
+    .t-wide p { margin: 0; color: #DCEBD9; }
+    .t-quote { grid-column: span 2; background: #fff; justify-content: center; }
+    .t-quote p { font-size: 1.3rem; font-weight: 500; margin: 0 0 8px; }
+    .t-quote span { color: var(--stone); font-size: .9rem; }
+    .t-season { background: linear-gradient(135deg, #E9A94B, #C8612F); color: #fff; }
+    .t-contact { background: var(--forest); color: #fff; }
+    .t-contact a { color: var(--lime); font-weight: 700; font-size: 1.15rem; text-decoration: none; }
+    footer { text-align: center; color: var(--stone); padding: 0 20px 90px; font-size: .9rem; }
+    @media (max-width: 980px) {
+      .bento { grid-template-columns: repeat(2, 1fr); }
+      nav a:not(.cta) { display: none; }
+    }
+    @media (max-width: 560px) {
+      .bento { grid-template-columns: 1fr; grid-auto-rows: minmax(160px, auto); }
+      .t-hero, .t-photo, .t-wide, .t-quote { grid-column: span 1; }
+      .t-photo { min-height: 260px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand"><i aria-hidden="true"></i>Greenline</div>
+      <nav><a href="#">Services</a><a href="#">Projects</a><a href="#">About</a><a href="#" class="cta">Free Estimate</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap bento">
+    <div class="tile t-hero">
+      <span>Landscape design &amp; care</span>
+      <div>
+        <h1>Outdoor spaces you'll actually use.</h1>
+        <p>Design, installation, and year-round maintenance for homes and businesses across the valley.</p>
+        <a href="#" class="btn">Get a free estimate</a>
+      </div>
+    </div>
+    <div class="tile t-photo"><span>Recent project: Backyard patio &amp; garden, Oak Hill</span></div>
+
+    <div class="tile t-stat"><b>500+</b>Yards transformed</div>
+    <div class="tile t-svc"><span class="num">01</span><h3>Design</h3><p>Custom plans that fit your space and budget.</p></div>
+    <div class="tile t-svc"><span class="num">02</span><h3>Hardscapes</h3><p>Patios, walkways, walls, and fire pits.</p></div>
+    <div class="tile t-svc"><span class="num">03</span><h3>Planting</h3><p>Trees, shrubs, and gardens that thrive.</p></div>
+
+    <div class="tile t-wide"><h3>Weekly maintenance plans</h3><p>Mowing, edging, trimming, and seasonal cleanups, so your yard always looks its best.</p></div>
+    <div class="tile t-season"><h3>Fall cleanup</h3>Now booking</div>
+    <div class="tile t-svc"><span class="num">04</span><h3>Irrigation</h3><p>Smart sprinkler installs and repairs.</p></div>
+
+    <div class="tile t-quote"><p>&ldquo;Our backyard went from bare dirt to our favorite room of the house.&rdquo;</p><span>Sample customer review</span></div>
+    <div class="tile t-stat" style="background:#fff"><b>4.9&#9733;</b>Average rating</div>
+    <div class="tile t-contact"><span>Call for an estimate</span><a href="tel:5550103300">(555) 010-3300</a></div>
+  </main>
+
+  <footer>&copy; Greenline Landscaping &middot; Licensed &amp; insured</footer>
+
+  <div class="ngd-badge"><img src="../favicon.svg" alt=""><span>Sample design by Narrow Gates Design &middot; fictional business</span><a href="../work.html">&larr; All examples</a></div>
+</body>
+</html>

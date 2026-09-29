@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rapid Flow Plumbing | Sample by Narrow Gates Design</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sample-badge.css">
+  <script src="sample-badge.js"></script>
+  <style>
+    :root { --blue: #0E4DA4; --deep: #082B5C; --orange: #FF7A1A; --light: #F2F6FB; --text: #1B2A3D; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Barlow", sans-serif; color: var(--text); line-height: 1.6; font-size: 17px; }
+    h1, h2, h3 { font-family: "Barlow Condensed", sans-serif; text-transform: uppercase; margin: 0 0 .4em; line-height: 1.05; letter-spacing: .01em; }
+    a { color: inherit; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+    .topbar { background: var(--orange); color: #fff; font-weight: 600; font-size: .92rem; }
+    .topbar .wrap { display: flex; justify-content: space-between; gap: 12px; padding-top: 8px; padding-bottom: 8px; flex-wrap: wrap; }
+    header { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.06); position: sticky; top: 0; z-index: 5; }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 14px; padding-bottom: 14px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-family: "Barlow Condensed", sans-serif; font-size: 1.7rem; font-weight: 700; text-transform: uppercase; color: var(--deep); }
+    .drop { width: 30px; height: 38px; background: var(--blue); border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; clip-path: polygon(50% 0, 100% 60%, 100% 100%, 0 100%, 0 60%); }
+    nav { display: flex; gap: 26px; font-weight: 600; }
+    nav a { text-decoration: none; }
+    .call { background: var(--blue); color: #fff; text-decoration: none; padding: 12px 20px; border-radius: 8px; font-weight: 600; white-space: nowrap; }
+    .hero { background: linear-gradient(115deg, var(--deep) 0%, var(--blue) 100%); color: #fff; padding: 70px 0; position: relative; overflow: hidden; }
+    .hero::after { content: ""; position: absolute; right: -120px; top: -120px; width: 420px; height: 420px; border-radius: 50%; border: 60px solid rgba(255,255,255,.05); }
+    .hero .wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center; position: relative; z-index: 1; }
+    .pill { display: inline-block; background: rgba(255,122,26,.18); color: #FFB27A; border: 1px solid rgba(255,122,26,.4); padding: 4px 12px; border-radius: 999px; font-weight: 600; font-size: .85rem; margin-bottom: 18px; }
+    .hero h1 { font-size: clamp(2.6rem, 6vw, 4.4rem); }
+    .hero h1 span { color: var(--orange); }
+    .hero p { font-size: 1.15rem; color: #D4E2F5; max-width: 520px; }
+    .trust { display: flex; gap: 28px; margin-top: 26px; flex-wrap: wrap; font-weight: 600; }
+    .trust div::before { content: "\2713"; color: var(--orange); margin-right: 8px; }
+    .quote { background: #fff; color: var(--text); border-radius: 14px; padding: 28px; box-shadow: 0 20px 50px rgba(0,0,0,.25); }
+    .quote h2 { font-size: 1.8rem; color: var(--deep); }
+    .quote label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: 12px; }
+    .quote input, .quote select { width: 100%; font: inherit; padding: 11px 12px; border: 1px solid #CCD6E3; border-radius: 8px; margin-top: 4px; }
+    .quote button { width: 100%; background: var(--orange); color: #fff; border: 0; font: inherit; font-weight: 700; padding: 14px; border-radius: 8px; font-size: 1.05rem; cursor: pointer; }
+    .stats { background: var(--light); }
+    .stats .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding-top: 30px; padding-bottom: 30px; text-align: center; }
+    .stats b { display: block; font-family: "Barlow Condensed", sans-serif; font-size: 2.4rem; color: var(--blue); line-height: 1; }
+    section { padding: 80px 0; }
+    .head { text-align: center; max-width: 620px; margin: 0 auto 44px; }
+    .head h2 { font-size: 2.6rem; color: var(--deep); }
+    .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .svc { border: 1px solid #E1E8F1; border-radius: 12px; padding: 26px; border-bottom: 4px solid var(--blue); }
+    .svc h3 { font-size: 1.5rem; color: var(--deep); }
+    .svc p { margin: 0; color: #4B5B70; }
+    .icon { width: 48px; height: 48px; border-radius: 10px; background: var(--light); display: grid; place-items: center; margin-bottom: 14px; color: var(--blue); font-weight: 700; font-size: 1.3rem; }
+    .emergency { background: var(--orange); color: #fff; padding: 40px 0; }
+    .emergency .wrap { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .emergency h2 { font-size: 2.2rem; margin: 0; }
+    .emergency a { background: #fff; color: var(--orange); font-weight: 700; padding: 14px 26px; border-radius: 8px; text-decoration: none; font-size: 1.2rem; }
+    .areas { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .areas span { background: var(--light); padding: 8px 16px; border-radius: 999px; font-weight: 500; }
+    footer { background: var(--deep); color: #A9BCD6; padding: 30px 0 90px; text-align: center; font-size: .92rem; }
+    @media (max-width: 900px) {
+      nav { display: none; }
+      .hero .wrap, .services { grid-template-columns: 1fr; }
+      .stats .wrap { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><span>24/7 Emergency Service Available</span><span>Licensed &amp; Insured &middot; Lic. #000000</span></div></div>
+  <header>
+    <div class="wrap">
+      <div class="brand"><span class="drop" aria-hidden="true"></span>Rapid Flow</div>
+      <nav><a href="#services">Services</a><a href="#areas">Service Area</a><a href="#quote">Free Quote</a></nav>
+      <a class="call" href="tel:5550100000">Call (555) 010-0000</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="pill">Same-day appointments</span>
+        <h1>Leaks fixed fast. <span>Done right</span> the first time.</h1>
+        <p>Family-owned plumbing for homes and small businesses. Upfront pricing, clean work, and technicians who show up on time.</p>
+        <div class="trust"><div>Upfront pricing</div><div>Background-checked techs</div><div>1-year guarantee</div></div>
+      </div>
+      <form class="quote" id="quote" onsubmit="event.preventDefault()">
+        <h2>Get a free quote</h2>
+        <label>Name<input type="text" placeholder="Your name"></label>
+        <label>Phone<input type="tel" placeholder="(555) 000-0000"></label>
+        <label>What do you need?
+          <select><option>Leak repair</option><option>Water heater</option><option>Drain cleaning</option><option>Something else</option></select>
+        </label>
+        <button type="submit">Request My Quote</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="stats"><div class="wrap">
+    <div><b>15+</b>Years in business</div>
+    <div><b>4.9&#9733;</b>Customer rating</div>
+    <div><b>60 min</b>Average response</div>
+    <div><b>24/7</b>Emergency line</div>
+  </div></div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="head"><h2>Our Services</h2><p>From dripping faucets to full repipes, we handle it all with the same care.</p></div>
+      <div class="services">
+        <div class="svc"><div class="icon">01</div><h3>Leak Repair</h3><p>Find and fix leaks fast before they turn into costly water damage.</p></div>
+        <div class="svc"><div class="icon">02</div><h3>Water Heaters</h3><p>Repair and installation of tank and tankless water heaters.</p></div>
+        <div class="svc"><div class="icon">03</div><h3>Drain Cleaning</h3><p>Clear stubborn clogs in sinks, tubs, and main sewer lines.</p></div>
+        <div class="svc"><div class="icon">04</div><h3>Fixture Install</h3><p>Faucets, toilets, sinks, and showers installed cleanly and correctly.</p></div>
+        <div class="svc"><div class="icon">05</div><h3>Repiping</h3><p>Replace old, corroded pipes and restore strong water pressure.</p></div>
+        <div class="svc"><div class="icon">06</div><h3>Inspections</h3><p>Camera inspections and home-buyer plumbing checks.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="emergency"><div class="wrap"><h2>Plumbing emergency? We're on the way.</h2><a href="tel:5550100000">(555) 010-0000</a></div></div>
+
+  <section id="areas">
+    <div class="wrap">
+      <div class="head"><h2>Areas We Serve</h2><p>Proudly serving the greater metro area and surrounding towns.</p></div>
+      <div class="areas"><span>Anytown</span><span>Riverside</span><span>Oak Hill</span><span>Maple Grove</span><span>Cedar Falls</span><span>Lakeview</span><span>Springfield</span></div>
+    </div>
+  </section>
+
+  <footer>&copy; Rapid Flow Plumbing &middot; Licensed, bonded &amp; insured</footer>
+
+  <div class="ngd-badge"><img src="../favicon.svg" alt=""><span>Sample design by Narrow Gates Design &middot; fictional business</span><a href="../work.html">&larr; All examples</a></div>
+</body>
+</html>

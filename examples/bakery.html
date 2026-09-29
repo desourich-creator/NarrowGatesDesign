@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hearth &amp; Honey Bakery | Sample by Narrow Gates Design</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Lato:wght@400;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sample-badge.css">
+  <script src="sample-badge.js"></script>
+  <style>
+    :root { --cream: #FBF4E9; --brown: #4A2E1F; --honey: #D98E2B; --rose: #C9785D; --muted: #7A5E4E; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Lato", sans-serif; color: var(--brown); background: var(--cream); line-height: 1.7; }
+    h1, h2, h3 { font-family: "Playfair Display", serif; margin: 0 0 .4em; line-height: 1.15; }
+    a { color: inherit; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+    header { text-align: center; padding: 28px 24px 18px; border-bottom: 1px solid #E8D9C4; }
+    .brand { font-family: "Playfair Display", serif; font-size: 2rem; font-weight: 700; letter-spacing: .02em; }
+    .brand small { display: block; font-family: "Lato", sans-serif; font-size: .72rem; letter-spacing: .4em; text-transform: uppercase; color: var(--honey); font-weight: 700; }
+    nav { display: flex; justify-content: center; gap: 34px; margin-top: 14px; flex-wrap: wrap; }
+    nav a { text-decoration: none; font-size: .88rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; }
+    nav a:hover { color: var(--honey); }
+    .hero { text-align: center; padding: 90px 24px 100px; background:
+      radial-gradient(circle at 20% 30%, rgba(217,142,43,.18), transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(201,120,93,.16), transparent 40%); }
+    .hero .script { font-family: "Playfair Display", serif; font-style: italic; color: var(--rose); font-size: 1.3rem; }
+    .hero h1 { font-size: clamp(2.6rem, 7vw, 4.8rem); max-width: 800px; margin: 0 auto .3em; }
+    .hero p { max-width: 560px; margin: 0 auto 32px; color: var(--muted); font-size: 1.1rem; }
+    .btn { display: inline-block; background: var(--brown); color: var(--cream); padding: 14px 34px; border-radius: 999px; text-decoration: none; font-weight: 700; letter-spacing: .06em; }
+    .btn:hover { background: var(--honey); }
+    .loaf { width: 120px; height: 120px; margin: 0 auto 26px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #F2C27B, #C27A2C 70%); box-shadow: 0 16px 40px rgba(74,46,31,.25); position: relative; }
+    .loaf::after { content: ""; position: absolute; inset: 34px 26px; border-top: 4px solid rgba(255,255,255,.55); border-radius: 50%; }
+    .divider { text-align: center; color: var(--honey); letter-spacing: .6em; margin: 0; }
+    section { padding: 80px 0; }
+    .center { text-align: center; }
+    .center > p { max-width: 560px; margin: 0 auto 44px; color: var(--muted); }
+    .menu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .menu-col { background: #fff; border-radius: 18px; padding: 30px; box-shadow: 0 6px 24px rgba(74,46,31,.06); }
+    .menu-col h3 { text-align: center; border-bottom: 1px solid #EFE3D2; padding-bottom: 14px; margin-bottom: 18px; }
+    .item { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+    .item span:first-child { font-weight: 700; }
+    .item em { display: block; font-style: normal; font-size: .88rem; color: var(--muted); font-weight: 400; }
+    .price { color: var(--honey); font-weight: 700; }
+    .story { background: var(--brown); color: var(--cream); }
+    .story .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .story-img { aspect-ratio: 4/3; border-radius: 18px; background: linear-gradient(135deg, #E0A95B, #8B4F2A); position: relative; overflow: hidden; }
+    .story-img::before, .story-img::after { content: ""; position: absolute; border-radius: 50%; background: rgba(255,240,215,.35); }
+    .story-img::before { width: 46%; aspect-ratio: 1; left: 12%; top: 22%; }
+    .story-img::after { width: 30%; aspect-ratio: 1; right: 14%; bottom: 16%; }
+    .story p { color: #E9D9C4; }
+    .visit { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; text-align: center; }
+    .visit div { padding: 28px; border: 1px solid #E8D9C4; border-radius: 18px; }
+    .visit p { margin: 0; color: var(--muted); }
+    footer { text-align: center; padding: 40px 24px 90px; border-top: 1px solid #E8D9C4; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 800px) {
+      .menu, .visit, .story .wrap { grid-template-columns: 1fr; }
+      nav { gap: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Hearth &amp; Honey<small>Bakery &middot; Est. 2012</small></div>
+    <nav>
+      <a href="#menu">Menu</a><a href="#story">Our Story</a><a href="#visit">Visit</a><a href="#visit">Order Ahead</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="loaf" aria-hidden="true"></div>
+    <p class="script">Baked fresh every morning</p>
+    <h1>Bread worth waking up for.</h1>
+    <p>Sourdough, pastries, and celebration cakes made from scratch with local flour, real butter, and a little honey.</p>
+    <a href="#menu" class="btn">See Today's Menu</a>
+  </section>
+
+  <p class="divider">&#10022; &#10022; &#10022;</p>
+
+  <section id="menu" class="wrap center">
+    <h2>From Our Ovens</h2>
+    <p>Our menu changes with the seasons. Here are a few of the favorites our neighbors come back for.</p>
+    <div class="menu">
+      <div class="menu-col">
+        <h3>Breads</h3>
+        <div class="item"><span>Country Sourdough<em>48-hour ferment</em></span><span class="price">$9</span></div>
+        <div class="item"><span>Honey Oat Loaf<em>Soft and lightly sweet</em></span><span class="price">$8</span></div>
+        <div class="item"><span>Rosemary Focaccia<em>Olive oil and sea salt</em></span><span class="price">$7</span></div>
+      </div>
+      <div class="menu-col">
+        <h3>Pastries</h3>
+        <div class="item"><span>Butter Croissant<em>Flaky, golden layers</em></span><span class="price">$4</span></div>
+        <div class="item"><span>Cinnamon Knot<em>With honey glaze</em></span><span class="price">$5</span></div>
+        <div class="item"><span>Seasonal Galette<em>Fresh local fruit</em></span><span class="price">$6</span></div>
+      </div>
+      <div class="menu-col">
+        <h3>Cakes</h3>
+        <div class="item"><span>Honey Lavender<em>6&Prime; or 9&Prime; rounds</em></span><span class="price">$38</span></div>
+        <div class="item"><span>Chocolate Stout<em>Rich and dark</em></span><span class="price">$42</span></div>
+        <div class="item"><span>Custom Celebration<em>Order 3 days ahead</em></span><span class="price">Quote</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" class="story">
+    <div class="wrap">
+      <div class="story-img" aria-hidden="true"></div>
+      <div>
+        <h2>A neighborhood bakery, the old-fashioned way.</h2>
+        <p>What started as a farmers-market table is now a little shop on Main Street. We still shape every loaf by hand, and we still know most of our customers by name.</p>
+        <p>Come in for coffee and a croissant, or order a cake for your next celebration. There's always something warm coming out of the oven.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="wrap">
+    <div class="visit">
+      <div><h3>Hours</h3><p>Tue&ndash;Sat: 7am &ndash; 3pm<br>Sun: 8am &ndash; 1pm</p></div>
+      <div><h3>Find Us</h3><p>123 Main Street<br>Anytown, USA</p></div>
+      <div><h3>Order Ahead</h3><p>(555) 010-2024<br>hello@example.com</p></div>
+    </div>
+  </section>
+
+  <footer>&copy; Hearth &amp; Honey Bakery &middot; Made with love and butter</footer>
+
+  <div class="ngd-badge"><img src="../favicon.svg" alt=""><span>Sample design by Narrow Gates Design &middot; fictional business</span><a href="../work.html">&larr; All examples</a></div>
+</body>
+</html>

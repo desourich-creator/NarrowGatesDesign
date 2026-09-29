@@ -8,8 +8,21 @@ Live site (once hosting is connected): https://narrowgatesdesign.com
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | The main (home) page |
-| `styles.css` | Colors, fonts, and layout |
+| `index.html` | Home page |
+| `services.html` | Services, packages, and FAQ |
+| `work.html` | "Our Work": links to 8 sample sites |
+| `about.html` | About page and the meaning behind the name |
+| `reviews.html` | Reviews page (Google reviews go here; see the note inside the file) |
+| `contact.html` | Contact form |
+| `thank-you.html` | Page shown after someone sends the contact form |
+| `examples/` | 8 sample websites for made-up businesses, each with a different layout |
+| `styles.css` | Colors, fonts, and layout for the main site |
+| `script.js` | Mobile menu and the live previews on the Our Work page |
+| `favicon.svg` | Logo / browser tab icon |
+
+The header and footer are repeated on each page, so a menu change needs making in every page.
+
+Colors, fonts, and layout |
 | `thank-you.html` | Page shown after someone sends the contact form |
 | `favicon.svg` | Logo / browser tab icon |
 
