@@ -23,7 +23,7 @@ Live site (once hosting is connected): https://narrowgatesdesign.com
 The header and footer are repeated on each page, so a menu change needs making in every page.
 
 The design uses the door logo's colors (night navy, gold, ivory) with Cinzel headings and Jost body text.
-The skyline and laptop photos load from Pexels (free license); if they fail to load, `images/skyline-placeholder.svg` and `images/photo-placeholder.svg` are shown instead.
+The skyline photo loads from Pexels (free license); if they fail to load, `images/skyline-placeholder.svg` is shown instead.
 
 This is a plain HTML/CSS site with no build step, so it can be hosted anywhere.
 

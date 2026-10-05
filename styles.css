@@ -137,6 +137,8 @@ p { margin: 0 0 1.1em; }
 
 /* Why us */
 .why-in { display: grid; grid-template-columns: 1fr 1.05fr; gap: 90px; align-items: center; }
+.why-in.no-photo { grid-template-columns: 1fr 1.1fr; align-items: start; }
+.why-in.no-photo .checks { margin: 0; }
 .why-photo { position: relative; }
 .why-photo::before { content: ""; position: absolute; inset: 28px -28px -28px 28px; border: 1px solid var(--gold-2); }
 .why-photo img { position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
