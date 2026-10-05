@@ -13,7 +13,7 @@ Live site (once hosting is connected): https://narrowgatesdesign.com
 | `work.html` | "Our Work": links to 8 sample sites |
 | `about.html` | About page and the meaning behind the name |
 | `reviews.html` | Reviews page (Google reviews go here; see the note inside the file) |
-| `contact.html` | Contact form |
+| `contact.html` | Contact form (sends to narrowgatesdesign@gmail.com via FormSubmit) |
 | `thank-you.html` | Page shown after someone sends the contact form |
 | `examples/` | 8 sample websites for made-up businesses, each with a different layout |
 | `styles.css` | Colors, fonts, and layout for the main site |
