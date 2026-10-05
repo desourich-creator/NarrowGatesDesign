@@ -22,10 +22,6 @@ Live site (once hosting is connected): https://narrowgatesdesign.com
 
 The header and footer are repeated on each page, so a menu change needs making in every page.
 
-Colors, fonts, and layout |
-| `thank-you.html` | Page shown after someone sends the contact form |
-| `favicon.svg` | Logo / browser tab icon |
-
 Colors, fonts (Poppins), and the cross-and-gate logo follow the Narrow Gates Design brand concept.
 `images/mark-on-dark.svg` is the logo version for dark backgrounds.
 
@@ -33,15 +29,13 @@ This is a plain HTML/CSS site with no build step, so it can be hosted anywhere.
 
 ## Hosting
 
-Recommended: **Netlify** (free plan). It works with a private GitHub repo,
-handles the contact form automatically, and gives free HTTPS for your domain.
+The site is hosted free on **GitHub Pages** from the `main` branch.
+Any change pushed to `main` goes live automatically within a few minutes.
 
-1. Sign up at https://app.netlify.com using your GitHub account.
-2. **Add new site → Import an existing project → GitHub** and pick `narrowgatesdesign`.
-3. Leave the build settings blank and click **Deploy**.
-4. **Domain management → Add a domain** and enter `narrowgatesdesign.com`, then follow
-   Netlify's instructions to point your domain (at the company you bought it from) to Netlify.
-5. Contact form messages appear under **Forms** in Netlify; turn on email notifications there.
+- GitHub Pages settings: repo **Settings → Pages** (custom domain `narrowgatesdesign.com`).
+- The domain is registered at Domain.com. Its DNS records point to GitHub:
+  `A @ 185.199.108.153` and `A www 185.199.108.153`.
+- Once GitHub has issued a certificate, tick **Enforce HTTPS** in Settings → Pages.
 
 ## Previewing locally
 
