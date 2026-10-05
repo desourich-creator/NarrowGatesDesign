@@ -16,7 +16,7 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   font: 400 13px/1.3 "Poppins", system-ui, sans-serif;
 }
-.ngd-badge img { width: 22px; height: 22px; flex: none; }
+.ngd-badge img { width: 22px; height: 22px; flex: none; border-radius: 5px; }
 .ngd-badge a {
   flex: none;
   background: #2E6BF0;

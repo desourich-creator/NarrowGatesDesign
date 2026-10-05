@@ -17,13 +17,13 @@ Live site (once hosting is connected): https://narrowgatesdesign.com
 | `thank-you.html` | Page shown after someone sends the contact form |
 | `examples/` | 8 sample websites for made-up businesses, each with a different layout |
 | `styles.css` | Colors, fonts, and layout for the main site |
-| `script.js` | Mobile menu and the live previews on the Our Work page |
-| `favicon.svg` | Logo / browser tab icon |
+| `script.js` | Header, mobile menu, and scroll fade-in effects |
+| `images/` | Logo (`logo-full.jpg`, `logo-icon.png`, `favicon.png`), sample-site screenshots, and photo fallbacks |
 
 The header and footer are repeated on each page, so a menu change needs making in every page.
 
-Colors, fonts (Poppins), and the cross-and-gate logo follow the Narrow Gates Design brand concept.
-`images/mark-on-dark.svg` is the logo version for dark backgrounds.
+The design uses the door logo's colors (night navy, gold, ivory) with Cinzel headings and Jost body text.
+The skyline and laptop photos load from Pexels (free license); if they fail to load, `images/skyline-placeholder.svg` and `images/photo-placeholder.svg` are shown instead.
 
 This is a plain HTML/CSS site with no build step, so it can be hosted anywhere.
 

@@ -5,103 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Us | Narrow Gates Design</title>
   <meta name="description" content="Contact Narrow Gates Design to start your small business website. Tell us about your project and we'll reply within one business day.">
-  <meta name="theme-color" content="#0B1A30">
+  <meta name="theme-color" content="#070E18">
   <link rel="canonical" href="https://narrowgatesdesign.com/contact.html">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/logo-icon.png">
   <meta property="og:title" content="Contact Us | Narrow Gates Design">
   <meta property="og:description" content="Contact Narrow Gates Design to start your small business website. Tell us about your project and we'll reply within one business day.">
   <meta property="og:url" content="https://narrowgatesdesign.com/contact.html">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://narrowgatesdesign.com/images/logo-full.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="Narrow Gates Design home">
-        <img src="favicon.svg" alt="" width="40" height="40">
-        <span class="logo-text">
-          <span class="logo-name">Narrow Gates</span>
-          <span class="logo-sub">Design</span>
-        </span>
+  <header class="hdr" id="hdr">
+    <div class="wrap hdr-in">
+      <a href="index.html" class="brand" aria-label="Narrow Gates Design home">
+        <img src="images/logo-icon.png" alt="" width="38" height="38">
+        <span class="brand-text"><span class="brand-name"><span class="gold">Narrow</span> Gates</span><span class="brand-sub">Design</span></span>
       </a>
-      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-      <nav class="nav" id="site-nav" aria-label="Main">
-        <a href="index.html">Home</a>
+      <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span><span></span></button>
+      <nav class="nav" id="nav" aria-label="Main">
         <a href="services.html">Services</a>
         <a href="work.html">Our Work</a>
+        <a href="index.html#builder">Design Yours</a>
         <a href="about.html">About</a>
         <a href="reviews.html">Reviews</a>
-        <a href="contact.html" class="btn btn-small" aria-current="page">Contact us</a>
+        <a href="contact.html" class="btn btn-outline btn-sm">Start a Project</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow">Contact us now</p>
-        <h1>Let's build your website.</h1>
-        <p class="lead">Tell us a little about your business and what you're looking for. We'll get back to you within one business day.</p>
+      <img class="hero-bg" src="https://images.pexels.com/photos/30532241/pexels-photo-30532241.jpeg?auto=compress&cs=tinysrgb&w=2400"
+           onerror="this.onerror=null;this.src='images/skyline-placeholder.svg'" alt="" aria-hidden="true">
+      <div class="wrap">
+        <p class="eyebrow reveal"><span class="line"></span>Contact Us</p>
+        <h1 class="reveal">Let's build your website.</h1>
+        <p class="hero-lead reveal">Tell us a little about your business and what you're looking for. We'll reply within one business day.</p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container contact-page">
+    <section class="sec light">
+      <div class="wrap contact-in">
         <div>
-          <p class="kicker">What happens next</p>
-          <h2>Simple and no pressure.</h2>
+          <p class="kicker reveal">What Happens Next</p>
+          <h2 class="reveal">Simple, and no pressure.</h2>
           <ol class="next-steps">
-            <li>
-              <span class="step-num">1</span>
-              <div>
-                <h3>Send us a message</h3>
-                <p>Fill out the form with a few details about your business.</p>
-              </div>
-            </li>
-            <li>
-              <span class="step-num">2</span>
-              <div>
-                <h3>We'll reach out</h3>
-                <p>Expect a reply within one business day to set up a free conversation.</p>
-              </div>
-            </li>
-            <li>
-              <span class="step-num">3</span>
-              <div>
-                <h3>Get a clear plan</h3>
-                <p>We'll recommend what fits your business and give you a straightforward quote.</p>
-              </div>
-            </li>
+            <li class="reveal"><span>01</span><div><h3>Send us a message</h3><p>A few details about your business is all we need.</p></div></li>
+            <li class="reveal"><span>02</span><div><h3>We'll reach out</h3><p>Expect a reply within one business day to set up a free conversation.</p></div></li>
+            <li class="reveal"><span>03</span><div><h3>Get a clear plan</h3><p>We'll recommend what fits your business and give you a straightforward quote.</p></div></li>
           </ol>
+          <p class="direct reveal">Prefer email? Write to <a href="mailto:narrowgatesdesign@gmail.com">narrowgatesdesign@gmail.com</a></p>
         </div>
 
         <!-- Sent by FormSubmit (formsubmit.co) to narrowgatesdesign@gmail.com.
              The first message triggers an activation email that must be confirmed once. -->
-        <form class="contact-form" method="POST" action="https://formsubmit.co/narrowgatesdesign@gmail.com">
+        <form class="form reveal" method="POST" action="https://formsubmit.co/narrowgatesdesign@gmail.com">
           <input type="hidden" name="_subject" value="New website enquiry - Narrow Gates Design">
           <input type="hidden" name="_next" value="http://narrowgatesdesign.com/thank-you.html">
           <input type="hidden" name="_template" value="table">
-          <p class="hidden"><label>Leave this empty: <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
-          <div class="form-row">
-            <label>Your name
-              <input type="text" name="name" autocomplete="name" required>
-            </label>
-            <label>Business name
-              <input type="text" name="business" autocomplete="organization">
-            </label>
+          <p class="hidden"><label>Leave this empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
+          <div class="row2">
+            <label>Your name<input type="text" name="name" autocomplete="name" required></label>
+            <label>Business name<input type="text" name="business" autocomplete="organization"></label>
           </div>
-          <div class="form-row">
-            <label>Email
-              <input type="email" name="email" autocomplete="email" required>
-            </label>
-            <label>Phone (optional)
-              <input type="tel" name="phone" autocomplete="tel">
-            </label>
+          <div class="row2">
+            <label>Email<input type="email" name="email" autocomplete="email" required></label>
+            <label>Phone (optional)<input type="tel" name="phone" autocomplete="tel"></label>
           </div>
           <label>What do you need?
             <select name="service">
@@ -112,33 +86,24 @@
               <option>Not sure yet</option>
             </select>
           </label>
-          <label>Tell us about your business and project
-            <textarea name="message" rows="6" required></textarea>
-          </label>
-          <button type="submit" class="btn">Send message</button>
+          <label>Tell us about your business and project<textarea name="message" rows="5" required></textarea></label>
+          <button type="submit" class="btn btn-gold">Send Message</button>
+          <p class="form-note">We'll only use your details to reply to you.</p>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <a href="index.html" class="logo logo-reversed" aria-label="Narrow Gates Design home">
-        <img src="images/mark-on-dark.svg" alt="" width="36" height="36">
-        <span class="logo-text">
-          <span class="logo-name">Narrow Gates</span>
-          <span class="logo-sub">Design</span>
-        </span>
-      </a>
-      <nav class="footer-nav" aria-label="Footer">
-        <a href="services.html">Services</a>
-        <a href="work.html">Our Work</a>
-        <a href="about.html">About</a>
-        <a href="reviews.html">Reviews</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <p>&copy; 2026 Narrow Gates Design</p>
+  <footer class="ftr">
+    <div class="wrap ftr-in">
+      <div>
+        <a href="index.html" class="brand"><img src="images/logo-icon.png" alt="" width="34" height="34"><span class="brand-text"><span class="brand-name"><span class="gold">Narrow</span> Gates</span><span class="brand-sub">Design</span></span></a>
+        <p class="ftr-note">Professional website design for small businesses.</p>
+      </div>
+      <div><h4>Explore</h4><a href="services.html">Services</a><a href="work.html">Our Work</a><a href="about.html">About</a><a href="reviews.html">Reviews</a></div>
+      <div><h4>Get in touch</h4><a href="contact.html">Contact us</a><a href="mailto:narrowgatesdesign@gmail.com">narrowgatesdesign@gmail.com</a></div>
     </div>
+    <div class="wrap ftr-bottom"><span>&copy; 2026 Narrow Gates Design</span><span>Photos courtesy of Pexels</span></div>
   </footer>
   <script src="script.js"></script>
 </body>

@@ -1,23 +1,26 @@
-// Mobile menu toggle
-(function () {
-  var toggle = document.querySelector('.nav-toggle');
-  var nav = document.getElementById('site-nav');
-  if (!toggle || !nav) return;
-  toggle.addEventListener('click', function () {
-    var open = nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-})();
+// Header turns solid once you scroll
+var hdr = document.getElementById('hdr');
+function onScroll() { hdr.classList.toggle('solid', window.scrollY > 40); }
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 
-// Scale the live previews on the examples page to fit their cards
-(function () {
-  var previews = document.querySelectorAll('.example-preview');
-  if (!previews.length) return;
-  function fit() {
-    previews.forEach(function (p) {
-      p.style.setProperty('--s', p.clientWidth / 1280);
+// Mobile menu
+var menuBtn = document.querySelector('.menu-btn'), nav = document.getElementById('nav');
+menuBtn.addEventListener('click', function () {
+  var open = nav.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', open);
+  hdr.classList.toggle('menu-open', open);
+});
+
+// Fade sections in as they scroll into view
+var revealEls = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
     });
-  }
-  fit();
-  window.addEventListener('resize', fit);
-})();
+  }, { rootMargin: '0px 0px -8% 0px' });
+  revealEls.forEach(function (el) { io.observe(el); });
+} else {
+  revealEls.forEach(function (el) { el.classList.add('in'); });
+}

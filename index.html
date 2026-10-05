@@ -3,179 +3,211 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Narrow Gates Design | Websites for Small Businesses</title>
-  <meta name="description" content="Narrow Gates Design builds clean, fast, trustworthy websites for small businesses. Design, build, launch, and ongoing care.">
-  <meta name="theme-color" content="#0B1A30">
+  <title>Narrow Gates Design | Professional Website Design</title>
+  <meta name="description" content="Narrow Gates Design builds clean, fast, trustworthy websites that open doors for small businesses.">
+  <meta name="theme-color" content="#070E18">
   <link rel="canonical" href="https://narrowgatesdesign.com/">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta property="og:title" content="Narrow Gates Design | Websites for Small Businesses">
-  <meta property="og:description" content="Narrow Gates Design builds clean, fast, trustworthy websites for small businesses. Design, build, launch, and ongoing care.">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/logo-icon.png">
+  <meta property="og:title" content="Narrow Gates Design | Professional Website Design">
+  <meta property="og:description" content="Narrow Gates Design builds clean, fast, trustworthy websites that open doors for small businesses.">
   <meta property="og:url" content="https://narrowgatesdesign.com/">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://narrowgatesdesign.com/images/logo-full.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo" aria-label="Narrow Gates Design home">
-        <img src="favicon.svg" alt="" width="40" height="40">
-        <span class="logo-text">
-          <span class="logo-name">Narrow Gates</span>
-          <span class="logo-sub">Design</span>
-        </span>
+  <header class="hdr" id="hdr">
+    <div class="wrap hdr-in">
+      <a href="index.html" class="brand" aria-label="Narrow Gates Design home">
+        <img src="images/logo-icon.png" alt="" width="38" height="38">
+        <span class="brand-text"><span class="brand-name"><span class="gold">Narrow</span> Gates</span><span class="brand-sub">Design</span></span>
       </a>
-      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-      <nav class="nav" id="site-nav" aria-label="Main">
-        <a href="index.html" aria-current="page">Home</a>
+      <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span><span></span></button>
+      <nav class="nav" id="nav" aria-label="Main">
         <a href="services.html">Services</a>
         <a href="work.html">Our Work</a>
+        <a href="index.html#builder">Design Yours</a>
         <a href="about.html">About</a>
         <a href="reviews.html">Reviews</a>
-        <a href="contact.html" class="btn btn-small">Contact us</a>
+        <a href="contact.html" class="btn btn-outline btn-sm">Start a Project</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">Web design for small businesses</p>
-          <h1>A website that works as hard as you do.</h1>
-          <p class="lead">
-            Narrow Gates Design builds clean, fast, trustworthy websites that help
-            small businesses get found, earn trust, and win customers.
-          </p>
-          <div class="hero-actions">
-            <a href="contact.html" class="btn">Start your project</a>
-            <a href="work.html" class="btn btn-ghost">See example sites</a>
-          </div>
+      <img class="hero-bg" src="https://images.pexels.com/photos/30532241/pexels-photo-30532241.jpeg?auto=compress&cs=tinysrgb&w=2400"
+           onerror="this.onerror=null;this.src='images/skyline-placeholder.svg'" alt="" aria-hidden="true">
+      <div class="hero-shade"></div>
+      <div class="wrap hero-in">
+        <p class="eyebrow reveal"><span class="line"></span>Professional Website Design</p>
+        <h1 class="reveal">Websites that <span class="gold">open doors</span> for your business.</h1>
+        <p class="hero-lead reveal">We design clean, fast, and trustworthy websites for small businesses, with one clear path that leads every visitor straight to you.</p>
+        <div class="hero-cta reveal">
+          <a href="contact.html" class="btn btn-gold">Start Your Project</a>
+          <a href="#builder" class="btn btn-ghost">Design Your Own <span aria-hidden="true">&rarr;</span></a>
         </div>
-        <img class="hero-mark" src="images/mark-on-dark.svg" alt="" width="260" height="260">
       </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="kicker">Services</p>
-            <h2>Everything you need to look professional online.</h2>
-            <p class="section-lead">Straightforward services sized for small businesses, without the headache.</p>
-          </div>
-          <a href="services.html" class="text-link">All services &rarr;</a>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8M12 18v3"/></svg>
-            <h3>Website design &amp; build</h3>
-            <p>A custom site designed around your business, your customers, and your brand. Mobile-friendly from day one.</p>
-          </article>
-          <article class="card">
-            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 5v6h-6"/></svg>
-            <h3>Website refresh</h3>
-            <p>Already have a site that feels dated or hard to use? We'll modernize it and make it faster and clearer.</p>
-          </article>
-          <article class="card">
-            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
-            <h3>Get found on Google</h3>
-            <p>Solid search basics, Google Business Profile setup, and speed tuning so customers can find you.</p>
-          </article>
-          <article class="card">
-            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
-            <h3>Care &amp; updates</h3>
-            <p>Hosting help, domain and email setup, content changes, and ongoing support when you need it.</p>
-          </article>
+      <div class="hero-bar">
+        <div class="wrap hero-bar-in">
+          <div><b>Custom</b><span>Designed for you, never cookie-cutter</span></div>
+          <div><b>Mobile-first</b><span>Looks sharp on every phone and screen</span></div>
+          <div><b>1 business day</b><span>Fast, personal replies from your designer</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section section-mist">
-      <div class="container">
-        <p class="kicker">Process</p>
-        <h2>How it works</h2>
-        <p class="section-lead">A simple, clear path from first conversation to launch. You'll always know what's next.</p>
+    <!-- STATEMENT -->
+    <section class="sec light statement">
+      <div class="wrap">
+        <p class="kicker reveal">Our Philosophy</p>
+        <p class="big-quote reveal">A great website is a <em>narrow gate</em>: one clear, beautiful path that leads every visitor to say yes.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="sec light pt0">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div><p class="kicker">What We Do</p><h2>Services built for small business</h2></div>
+          <a href="services.html" class="arrow-link">All services <span>&rarr;</span></a>
+        </div>
+        <div class="svc-grid">
+          <article class="svc reveal">
+            <span class="svc-num">01</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M8 21h8M12 17v4"/></svg>
+            <h3>Website Design</h3>
+            <p>A custom website crafted around your business, your customers, and your brand.</p>
+          </article>
+          <article class="svc reveal">
+            <span class="svc-num">02</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 5v6h-6"/></svg>
+            <h3>Website Refresh</h3>
+            <p>Turn a dated, slow website into a modern one that works as hard as you do.</p>
+          </article>
+          <article class="svc reveal">
+            <span class="svc-num">03</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg>
+            <h3>Get Found on Google</h3>
+            <p>Google Business Profile, search basics, and speed tuning so customers find you.</p>
+          </article>
+          <article class="svc reveal">
+            <span class="svc-num">04</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+            <h3>Care &amp; Support</h3>
+            <p>Updates, hosting, and a real person to call whenever you need a hand.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WORK -->
+    <section class="sec dark work">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <div><p class="kicker">Our Work</p><h2>Designs that fit the business</h2></div>
+          <a href="work.html" class="arrow-link">View all designs <span>&rarr;</span></a>
+        </div>
+        <div class="work-feature reveal">
+          <div class="device">
+            <div class="laptop"><div class="screen"><img src="images/work/law.jpg" alt="Whitfield &amp; Crane Law sample website" loading="lazy"></div><div class="base"></div></div>
+            <div class="phone"><img src="images/work/law-phone.jpg" alt="" loading="lazy"></div>
+          </div>
+          <div class="work-copy">
+            <p class="tag">Law Firm &middot; Sidebar Layout</p>
+            <h3>Whitfield &amp; Crane Law</h3>
+            <p>A refined, trustworthy site for a professional practice, with a side menu that stays in place, clear practice areas, and a consultation button on every screen.</p>
+            <a href="work.html" class="arrow-link">See the full project <span>&rarr;</span></a>
+          </div>
+        </div>
+        <div class="work-row">
+          <a href="examples/bakery.html" class="work-card reveal"><img src="images/work/bakery.jpg" alt="" loading="lazy"><span class="tag">Bakery</span><b>Hearth &amp; Honey</b></a>
+          <a href="examples/salon.html" class="work-card reveal"><img src="images/work/salon.jpg" alt="" loading="lazy"><span class="tag">Salon</span><b>Lumen Salon</b></a>
+          <a href="examples/plumbing.html" class="work-card reveal"><img src="images/work/plumbing.jpg" alt="" loading="lazy"><span class="tag">Plumbing</span><b>Rapid Flow</b></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="sec light why">
+      <div class="wrap why-in">
+        <div class="why-photo reveal">
+          <img src="https://images.pexels.com/photos/1586996/pexels-photo-1586996.jpeg?auto=compress&cs=tinysrgb&w=1200"
+               onerror="this.onerror=null;this.src='images/photo-placeholder.svg'" alt="A professional working on a laptop at a desk" loading="lazy">
+          <div class="why-badge"><b>100%</b><span>Personal service</span></div>
+        </div>
+        <div class="why-copy">
+          <p class="kicker reveal">Why Narrow Gates</p>
+          <h2 class="reveal">Faith and trust first. Clean design for the tech.</h2>
+          <p class="reveal">Small businesses don't need bloated, confusing websites. You need a partner who listens, explains things in plain English, and builds something you're proud to share.</p>
+          <ul class="checks">
+            <li class="reveal"><b>Honest and dependable.</b> Clear pricing, clear timelines, and we do what we say.</li>
+            <li class="reveal"><b>Direct access.</b> You work with your designer, never a call center.</li>
+            <li class="reveal"><b>Yours to keep.</b> You own your domain, your content, and your site.</li>
+          </ul>
+          <a href="about.html" class="btn btn-navy reveal">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUILDER CTA -->
+    <section class="sec dark builder" id="builder">
+      <div class="wrap builder-in">
+        <div class="reveal">
+          <p class="kicker">Coming Soon</p>
+          <h2>See your business in a <span class="gold">real website</span>, right now.</h2>
+          <p>Type your business name, pick your industry, choose from 15 layouts and your colors, and upload your logo. Watch your website come to life in seconds. Our website builder is on its way. Until then, we'll happily make you a free mockup.</p>
+          <a href="contact.html" class="btn btn-gold">Request a Free Mockup</a>
+        </div>
+        <div class="builder-mock reveal" aria-hidden="true">
+          <div class="bm-side"><i></i><i></i><i class="short"></i><div class="bm-tpl"><span></span><span class="on"></span><span></span><span></span><span></span><span></span></div><div class="bm-sw"><span></span><span></span><span></span><span></span></div></div>
+          <div class="bm-main"><div class="bm-chrome"><i></i><i></i><i></i></div><div class="bm-page"><div class="bm-nav"><span class="bm-logo">S</span>Sunrise Coffee Co.</div><div class="bm-hero"><div><b>Your new favorite morning ritual.</b><em></em><em class="s"></em><span class="bm-btn"></span></div><div class="bm-img"></div></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="sec light">
+      <div class="wrap">
+        <div class="sec-head center reveal"><div><p class="kicker">How It Works</p><h2>From first call to launch</h2></div></div>
         <ol class="steps">
-          <li>
-            <span class="step-num">1</span>
-            <h3>Talk</h3>
-            <p>A free conversation about your business, your goals, and what you need your website to do.</p>
-          </li>
-          <li>
-            <span class="step-num">2</span>
-            <h3>Design</h3>
-            <p>We sketch the layout and look, then refine it together until it feels right.</p>
-          </li>
-          <li>
-            <span class="step-num">3</span>
-            <h3>Build</h3>
-            <p>Your site is built to be fast, secure, and easy to read on any phone, tablet, or computer.</p>
-          </li>
-          <li>
-            <span class="step-num">4</span>
-            <h3>Launch</h3>
-            <p>We put it live on your domain and stay available for updates and support.</p>
-          </li>
+          <li class="reveal"><span>01</span><h3>Talk</h3><p>A free conversation about your business and goals.</p></li>
+          <li class="reveal"><span>02</span><h3>Design</h3><p>We shape the look and layout together until it feels right.</p></li>
+          <li class="reveal"><span>03</span><h3>Build</h3><p>Fast, secure, and beautiful on every device.</p></li>
+          <li class="reveal"><span>04</span><h3>Launch</h3><p>We put it live and stay with you for support.</p></li>
         </ol>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container why">
-        <div>
-          <p class="kicker">Why Narrow Gates</p>
-          <h2>Faith and trust first. Clean design for the tech.</h2>
-          <p class="section-lead">
-            Small businesses don't need bloated, confusing websites. You need a clear,
-            narrow path that leads customers straight to what matters: calling you,
-            booking with you, or walking through your door.
-          </p>
-          <a href="about.html" class="text-link">More about us &rarr;</a>
-        </div>
-        <ul class="checklist">
-          <li><strong>Honest and dependable.</strong> Clear pricing, clear timelines, and we do what we say.</li>
-          <li><strong>Built for small business.</strong> A site sized to your needs and your budget.</li>
-          <li><strong>Personal service.</strong> You work directly with your designer, not a call center.</li>
-          <li><strong>Plain English.</strong> No jargon. We explain everything as we go.</li>
-          <li><strong>Yours to keep.</strong> You own your domain, your content, and your site.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="cta-band">
-      <div class="container cta-inner">
-        <div>
-          <h2>Let's build your website.</h2>
-          <p>Tell us about your business. We'll reply within one business day.</p>
-        </div>
-        <a href="contact.html" class="btn">Contact us now</a>
+    <!-- FINAL CTA -->
+    <section class="final">
+      <img class="hero-bg" src="https://images.pexels.com/photos/30532241/pexels-photo-30532241.jpeg?auto=compress&cs=tinysrgb&w=2400"
+           onerror="this.onerror=null;this.src='images/skyline-placeholder.svg'" alt="" aria-hidden="true" loading="lazy">
+      <div class="final-shade"></div>
+      <div class="wrap final-in reveal">
+        <img src="images/logo-icon.png" alt="" width="56" height="56" class="final-icon">
+        <h2>Ready to open the door?</h2>
+        <p>Tell us about your business. We'll reply within one business day.</p>
+        <a href="contact.html" class="btn btn-gold">Start Your Project</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <a href="index.html" class="logo logo-reversed" aria-label="Narrow Gates Design home">
-        <img src="images/mark-on-dark.svg" alt="" width="36" height="36">
-        <span class="logo-text">
-          <span class="logo-name">Narrow Gates</span>
-          <span class="logo-sub">Design</span>
-        </span>
-      </a>
-      <nav class="footer-nav" aria-label="Footer">
-        <a href="services.html">Services</a>
-        <a href="work.html">Our Work</a>
-        <a href="about.html">About</a>
-        <a href="reviews.html">Reviews</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <p>&copy; 2026 Narrow Gates Design</p>
+  <footer class="ftr">
+    <div class="wrap ftr-in">
+      <div>
+        <a href="index.html" class="brand"><img src="images/logo-icon.png" alt="" width="34" height="34"><span class="brand-text"><span class="brand-name"><span class="gold">Narrow</span> Gates</span><span class="brand-sub">Design</span></span></a>
+        <p class="ftr-note">Professional website design for small businesses.</p>
+      </div>
+      <div><h4>Explore</h4><a href="services.html">Services</a><a href="work.html">Our Work</a><a href="about.html">About</a><a href="reviews.html">Reviews</a></div>
+      <div><h4>Get in touch</h4><a href="contact.html">Contact us</a><a href="mailto:narrowgatesdesign@gmail.com">narrowgatesdesign@gmail.com</a></div>
     </div>
+    <div class="wrap ftr-bottom"><span>&copy; 2026 Narrow Gates Design</span><span>Photos courtesy of Pexels</span></div>
   </footer>
   <script src="script.js"></script>
 </body>
