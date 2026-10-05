@@ -13,6 +13,7 @@ Live site (once hosting is connected): https://narrowgatesdesign.com
 | `work.html` | "Our Work": links to 8 sample sites |
 | `about.html` | About page and the meaning behind the name |
 | `reviews.html` | Reviews page (Google reviews go here; see the note inside the file) |
+| `design.html`, `design.js` | "Design Your Website" builder: 53 industries, 15 layouts, 12 color themes, logo upload, live preview |
 | `contact.html` | Contact form (sends to narrowgatesdesign@gmail.com via FormSubmit) |
 | `thank-you.html` | Page shown after someone sends the contact form |
 | `examples/` | 8 sample websites for made-up businesses, each with a different layout |

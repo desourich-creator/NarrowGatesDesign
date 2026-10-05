@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design Your Website | Narrow Gates Design</title>
+  <meta name="description" content="Try our free website builder. Type your business name, pick your industry, choose from 15 layouts and your colors, upload your logo, and see your website come to life.">
+  <meta name="theme-color" content="#070E18">
+  <link rel="canonical" href="https://narrowgatesdesign.com/design.html">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/logo-icon.png">
+  <meta property="og:title" content="Design Your Website | Narrow Gates Design">
+  <meta property="og:description" content="Try our free website builder. Type your business name, pick your industry, choose from 15 layouts and your colors, upload your logo, and see your website come to life.">
+  <meta property="og:url" content="https://narrowgatesdesign.com/design.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://narrowgatesdesign.com/images/logo-full.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261006">
+</head>
+<body>
+  <header class="hdr" id="hdr">
+    <div class="wrap hdr-in">
+      <a href="index.html" class="brand" aria-label="Narrow Gates Design home">
+        <img src="images/logo-icon.png" alt="" width="38" height="38">
+        <span class="brand-text"><span class="brand-name"><span class="gold">Narrow</span> Gates</span><span class="brand-sub">Design</span></span>
+      </a>
+      <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu"><span></span><span></span></button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="services.html">Services</a>
+        <a href="work.html">Our Work</a>
+        <a href="design.html" aria-current="page">Design Yours</a>
+        <a href="about.html">About</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html" class="btn btn-outline btn-sm">Start a Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-sm">
+      <img class="hero-bg" src="https://images.pexels.com/photos/30532241/pexels-photo-30532241.jpeg?auto=compress&cs=tinysrgb&w=2400"
+           onerror="this.onerror=null;this.src='images/skyline-placeholder.svg'" alt="" aria-hidden="true">
+      <div class="wrap">
+        <p class="eyebrow"><span class="line"></span>Free Website Builder</p>
+        <h1>Design your website.</h1>
+        <p class="hero-lead">See your business in a real website design in seconds. Pick a layout, your colors, and add your logo. When you love it, we'll build it for you.</p>
+      </div>
+    </section>
+
+    <section class="builder-app">
+      <div class="wrap-wide builder-grid">
+        <aside class="b-panel" aria-label="Design options">
+          <div class="b-step">
+            <label class="b-label" for="b-name"><i>1</i>Business name</label>
+            <input id="b-name" class="b-input" type="text" placeholder="e.g. Sunrise Coffee Co." maxlength="40" autocomplete="organization">
+          </div>
+          <div class="b-step">
+            <label class="b-label" for="b-industry"><i>2</i>Industry</label>
+            <select id="b-industry" class="b-input"></select>
+            <p class="b-hint"><span id="b-count"></span> industries. The headline and services fill in to match.</p>
+          </div>
+          <div class="b-step">
+            <p class="b-label"><i>3</i>Choose a layout</p>
+            <div class="layouts" id="b-layouts"></div>
+          </div>
+          <div class="b-step">
+            <p class="b-label"><i>4</i>Colors</p>
+            <div class="swatches" id="b-palettes"></div>
+            <div class="custom" id="b-custom">
+              <span>Or pick your own:</span>
+              <label>Main <input type="color" id="b-custom-p" value="#14324F"></label>
+              <label>Accent <input type="color" id="b-custom-a" value="#E0A13A"></label>
+            </div>
+          </div>
+          <div class="b-step">
+            <p class="b-label"><i>5</i>Your logo <small>(optional)</small></p>
+            <label class="upload">
+              <input type="file" id="b-logo" accept="image/*">
+              <span class="upload-btn">Upload logo</span>
+              <span class="upload-name" id="b-logo-name">PNG, JPG or SVG</span>
+            </label>
+            <button type="button" class="b-link" id="b-logo-clear" hidden>Remove logo</button>
+            <p class="b-hint">Your logo stays on your device. Nothing is uploaded to us.</p>
+          </div>
+          <button type="button" class="b-shuffle" id="b-shuffle">&#10022; Surprise me</button>
+        </aside>
+
+        <div class="b-preview">
+          <div class="b-bar">
+            <div class="devices" role="group" aria-label="Preview size">
+              <button type="button" class="device-btn" data-device="desktop">Desktop</button>
+              <button type="button" class="device-btn" data-device="tablet">Tablet</button>
+              <button type="button" class="device-btn" data-device="phone">Phone</button>
+            </div>
+            <span class="b-live"><span class="dot"></span>Live preview</span>
+          </div>
+          <div class="b-stage" id="b-stage">
+            <div class="shell" id="b-shell">
+              <div class="chrome"><i></i><i></i><i></i><span id="b-url">yourbusiness.com</span></div>
+              <iframe id="b-frame" title="Website preview" sandbox="allow-same-origin" loading="eager"></iframe>
+            </div>
+          </div>
+          <div class="b-cta">
+            <div>
+              <b>Love how it looks?</b>
+              <p>We'll build the real thing for you. Your choices go straight into your message: <span id="b-summary"></span></p>
+            </div>
+            <a href="contact.html" class="btn btn-gold" id="b-go">Let's Build It &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="design.js?v=20261006"></script>
+
+  <footer class="ftr">
+    <div class="wrap ftr-in">
+      <div>
+        <a href="index.html" class="brand"><img src="images/logo-icon.png" alt="" width="34" height="34"><span class="brand-text"><span class="brand-name"><span class="gold">Narrow</span> Gates</span><span class="brand-sub">Design</span></span></a>
+        <p class="ftr-note">Professional website design for small businesses.</p>
+      </div>
+      <div><h4>Explore</h4><a href="services.html">Services</a><a href="work.html">Our Work</a><a href="about.html">About</a><a href="reviews.html">Reviews</a></div>
+      <div><h4>Get in touch</h4><a href="contact.html">Contact us</a><a href="mailto:narrowgatesdesign@gmail.com">narrowgatesdesign@gmail.com</a></div>
+    </div>
+    <div class="wrap ftr-bottom"><span>&copy; 2026 Narrow Gates Design</span><span>Photos courtesy of Pexels</span></div>
+  </footer>
+  <script src="script.js?v=20261006"></script>
+</body>
+</html>

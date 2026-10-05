@@ -24,3 +24,24 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
 } else {
   revealEls.forEach(function (el) { el.classList.add('in'); });
 }
+
+// Contact form: fill in the visitor's choices when they come from the website builder
+(function () {
+  var form = document.querySelector('form.form');
+  if (!form) return;
+  var q = new URLSearchParams(location.search);
+  if (q.get('from') !== 'builder') return;
+  var business = q.get('business') || '';
+  if (business && form.business) form.business.value = business;
+  if (form.service) form.service.value = 'A new website';
+  var lines = ['Hi! I designed a website in your builder and would love to have it built.', '',
+    'Business: ' + (business || '(not entered)'),
+    'Industry: ' + (q.get('industry') || ''),
+    'Layout: ' + (q.get('layout') || ''),
+    'Colors: ' + (q.get('colors') || '')];
+  if (q.get('logo') === 'yes') lines.push('Logo: I have a logo and can email it to you.');
+  lines.push('', 'A bit more about my business:', '');
+  if (form.message && !form.message.value) form.message.value = lines.join('\n');
+  var note = document.getElementById('builder-note');
+  if (note) note.hidden = false;
+})();
