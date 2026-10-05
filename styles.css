@@ -327,6 +327,8 @@ p { margin: 0 0 1.1em; }
   .wrap { padding: 0 22px; }
   .sec { padding: 84px 0; }
   .hero-in { padding-bottom: 40px; }
+  .eyebrow, .kicker { letter-spacing: .2em; }
+  .eyebrow .line { width: 26px; }
   .hero-bar { position: relative; }
   .hero-bar-in { grid-template-columns: 1fr; }
   .hero-bar-in div { border-left: 0; padding: 16px 0; border-top: 1px solid var(--hair); }
