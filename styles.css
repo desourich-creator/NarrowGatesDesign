@@ -58,6 +58,7 @@ p { margin: 0 0 1.1em; }
 .hdr-in { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 56px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .brand img { border-radius: 8px; }
+.hdr .brand img { width: 76px; height: 76px; border-radius: 12px; }
 .brand-text { display: flex; flex-direction: column; line-height: 1; }
 .brand-name { font: 600 1.02rem/1 var(--serif); letter-spacing: .06em; color: #EDEFF3; }
 .brand-sub { font: 400 .56rem/1 var(--sans); letter-spacing: .55em; text-transform: uppercase; color: var(--mist); margin-top: 6px; }
@@ -73,7 +74,7 @@ p { margin: 0 0 1.1em; }
 .menu-open .menu-btn span:last-child { transform: translateY(-4px) rotate(-45deg); }
 
 /* Hero with skyline photo */
-.hero { position: relative; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; justify-content: center; overflow: hidden; padding-top: 110px; }
+.hero { position: relative; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; justify-content: center; overflow: hidden; padding-top: 150px; }
 .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 60%; }
 .hero-shade { position: absolute; inset: 0; background:
   linear-gradient(90deg, rgba(7,14,24,.94) 0%, rgba(7,14,24,.78) 38%, rgba(7,14,24,.35) 70%, rgba(7,14,24,.25) 100%),
@@ -206,7 +207,7 @@ p { margin: 0 0 1.1em; }
 
 
 /* ---------- Inner pages ---------- */
-.page-hero { position: relative; padding: 190px 0 110px; overflow: hidden; background: var(--night); }
+.page-hero { position: relative; padding: 210px 0 110px; overflow: hidden; background: var(--night); }
 .page-hero .hero-bg { opacity: .35; }
 .page-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,14,24,.95) 0%, rgba(7,14,24,.7) 60%, rgba(7,14,24,.5) 100%), linear-gradient(0deg, var(--night), transparent 40%); }
 .page-hero .wrap { position: relative; z-index: 1; }
@@ -231,6 +232,14 @@ p { margin: 0 0 1.1em; }
 .package p { color: var(--slate); }
 .package .ticks li { color: var(--slate); }
 .package .ticks { flex: 1; margin: 22px 0 32px; }
+.price { display: flex; align-items: baseline; gap: 6px; margin: 4px 0 16px; }
+.price b { font: 500 2.6rem/1 var(--serif); color: var(--ink); }
+.price span { font-size: .95rem; color: var(--slate); }
+.package-featured .price b { color: var(--gold-1); }
+.package-featured .price span { color: var(--mist); }
+.package-premium { border: 1px solid var(--gold-2); position: relative; }
+.package-premium::before { content: ""; position: absolute; left: -1px; right: -1px; top: -1px; height: 4px; background: linear-gradient(90deg, var(--gold-3), var(--gold-1), var(--gold-3)); }
+.package-premium .tag { color: var(--gold-3); }
 .package .btn { justify-content: center; }
 .package-featured { background: var(--night); border-color: var(--night); }
 .package-featured h3 { color: #fff; }
@@ -305,6 +314,7 @@ p { margin: 0 0 1.1em; }
 }
 @media (max-width: 720px) {
   .page-hero { padding: 140px 0 70px; }
+  .hdr .brand img { width: 56px; height: 56px; }
   .svc-row { grid-template-columns: 1fr; gap: 18px; padding: 40px 0; }
   .work-grid, .values { grid-template-columns: 1fr; }
   .form { padding: 34px 24px; }
@@ -315,11 +325,11 @@ p { margin: 0 0 1.1em; }
 
 
 /* ---------- Website builder ---------- */
-.page-hero-sm { padding: 170px 0 80px; }
+.page-hero-sm { padding: 190px 0 80px; }
 .wrap-wide { width: 100%; max-width: 1480px; margin: 0 auto; padding: 0 32px; }
 .builder-app { background: var(--ivory); color: var(--ink); padding: 50px 0 90px; }
 .builder-grid { display: grid; grid-template-columns: 370px 1fr; gap: 34px; align-items: start; }
-.b-panel { background: var(--paper); border: 1px solid var(--hair-light); padding: 28px 26px; position: sticky; top: 90px; max-height: calc(100vh - 110px); overflow-y: auto; }
+.b-panel { background: var(--paper); border: 1px solid var(--hair-light); padding: 28px 26px; position: sticky; top: 112px; max-height: calc(100vh - 130px); overflow-y: auto; }
 .b-step { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid var(--hair-light); }
 .b-label { display: flex; align-items: center; gap: 12px; font: 500 .74rem/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--ink); margin: 0 0 14px; }
 .b-label i { font: 600 .8rem/1 var(--serif); font-style: normal; width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--gold-2); color: var(--gold-3); display: grid; place-items: center; letter-spacing: 0; }
