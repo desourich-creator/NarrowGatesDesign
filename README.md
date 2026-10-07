@@ -10,7 +10,7 @@ Live site (once hosting is connected): https://narrowgatesdesign.com
 | --- | --- |
 | `index.html` | Home page |
 | `services.html` | Services, packages, and FAQ |
-| `ai.html` | AI Solutions: free AI audit, AI search optimization, AI services, monthly AI partner |
+| `ai.html` | AI Solutions & Business Services: free AI audit, AI search optimization, AI services, monthly AI partner, website add-ons, brand & marketing, partner programs |
 | `work.html` | "Our Work": links to 8 sample sites |
 | `about.html` | About page and the meaning behind the name |
 | `reviews.html` | Reviews page (Google reviews go here; see the note inside the file) |

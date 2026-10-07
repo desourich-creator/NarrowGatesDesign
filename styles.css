@@ -442,6 +442,60 @@ p { margin: 0 0 1.1em; }
   .audit-list { padding: 20px 24px; }
 }
 
+
+/* AI page: jump links, detailed cards, partner cards */
+.jump { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px; }
+.jump a { border: 1px solid rgba(247,244,238,.25); color: rgba(247,244,238,.85); text-decoration: none; padding: 10px 16px; font: 500 .7rem/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; transition: border-color .2s, color .2s; }
+.jump a:hover { border-color: var(--gold-2); color: var(--gold-1); }
+section[id] { scroll-margin-top: 110px; }
+.sec-intro { max-width: 680px; margin: -34px 0 50px; font-size: 1.05rem; }
+.dcards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.dcard { display: grid; grid-template-columns: 58px 1fr; gap: 24px; background: var(--paper); border: 1px solid var(--hair-light); padding: 36px 34px; transition: border-color .3s, transform .3s var(--ease); }
+.dcard:hover { border-color: var(--gold-2); transform: translateY(-3px); }
+.dcard-icon { width: 58px; height: 58px; display: grid; place-items: center; border: 1px solid var(--gold-2); border-radius: 50%; }
+.dcard-icon svg { width: 26px; height: 26px; fill: none; stroke: var(--gold-3); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
+.dcard h3 { font-size: 1.25rem; margin-bottom: .5em; }
+.dcard p { font-size: .98rem; }
+.dcard .ticks { margin: 4px 0 18px; }
+.dcard .ticks li { font-size: .94rem; }
+.fit { margin: 0; font-size: .9rem !important; padding: 12px 14px; background: var(--ivory); border-left: 2px solid var(--gold-2); }
+.fit b { color: var(--ink); font-weight: 500; }
+.dcards-dark .dcard { background: var(--night-2); border-color: var(--hair); }
+.dcards-dark .dcard h3 { color: #fff; }
+.dcards-dark .dcard p, .dcards-dark .ticks li { color: var(--mist); }
+.dcards-dark .ticks li { border-color: var(--hair); }
+.dcards-dark .ticks li::before { border-color: var(--gold-2); }
+.dcards-dark .dcard-icon svg { stroke: var(--gold-2); }
+.dcards-dark .fit { background: rgba(217,174,85,.08); }
+.dcards-dark .fit b { color: var(--gold-1); }
+.mini-steps { list-style: none; padding: 0; margin: 80px 0 0; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--hair); }
+.mini-steps li { padding: 28px 26px 0 0; color: var(--mist); font-size: .95rem; }
+.mini-steps li + li { padding-left: 26px; border-left: 1px solid var(--hair); }
+.mini-steps span { display: block; font: 500 .8rem/1 var(--serif); color: var(--gold-2); margin-bottom: 12px; letter-spacing: .1em; }
+.mini-steps b { display: block; font: 500 1.15rem/1.3 var(--serif); color: #fff; margin-bottom: 6px; }
+.pcards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.pcard { background: var(--night-2); border: 1px solid var(--hair); padding: 40px 34px; position: relative; display: flex; flex-direction: column; }
+.pcard::before { content: ""; position: absolute; left: -1px; right: -1px; top: -1px; height: 3px; background: linear-gradient(90deg, var(--gold-3), var(--gold-1), var(--gold-3)); }
+.pcard .dcard-icon { margin-bottom: 24px; }
+.pcard .dcard-icon svg { stroke: var(--gold-2); }
+.pcard h3 { color: #fff; font-size: 1.3rem; margin: 12px 0 14px; }
+.pcard .ticks { margin-top: auto; }
+.pcard .ticks li { color: var(--mist); border-color: var(--hair); font-size: .94rem; }
+.pcard .ticks li::before { border-color: var(--gold-2); }
+.center-cta { text-align: center; margin-top: 56px; }
+@media (max-width: 1080px) {
+  .dcards, .pcards { grid-template-columns: 1fr; }
+  .mini-steps { grid-template-columns: repeat(2, 1fr); }
+  .mini-steps li:nth-child(3) { padding-left: 0; border-left: 0; }
+  .mini-steps li { padding-bottom: 20px; }
+}
+@media (max-width: 720px) {
+  .dcard { grid-template-columns: 1fr; gap: 16px; padding: 30px 24px; }
+  .mini-steps { grid-template-columns: 1fr; }
+  .mini-steps li, .mini-steps li + li { padding: 20px 0; border-left: 0; border-bottom: 1px solid var(--hair); }
+  .jump a { padding: 9px 12px; font-size: .64rem; }
+}
+
 /* Responsive */
 @media (max-width: 1080px) {
   .svc-grid { grid-template-columns: repeat(2, 1fr); }
