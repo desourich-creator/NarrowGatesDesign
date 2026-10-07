@@ -76,14 +76,3 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
   }
 })();
 
-// Contact form: "Become a Partner" button on the AI Solutions page
-(function () {
-  var form = document.querySelector('form.form');
-  if (!form || new URLSearchParams(location.search).get('from') !== 'partner') return;
-  if (form.service) form.service.value = 'Partnership (agency, referral, or industry package)';
-  if (form.message && !form.message.value) {
-    form.message.value = "Hi! I'm interested in partnering with Narrow Gates Design.\n\nI'm interested in: (white-label work / referral partnership / industry package)\n\nAbout my business:\n";
-  }
-  var note = document.getElementById('builder-note');
-  if (note) { note.textContent = '✦ Partnerships: tell us a little about your business and how you would like to work together.'; note.hidden = false; }
-})();

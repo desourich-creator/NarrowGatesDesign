@@ -496,6 +496,34 @@ section[id] { scroll-margin-top: 110px; }
   .jump a { padding: 9px 12px; font-size: .64rem; }
 }
 
+
+/* AI page: compact cards */
+.ccards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.ccard { background: var(--paper); border: 1px solid var(--hair-light); padding: 30px 28px; transition: border-color .3s, transform .3s var(--ease); }
+.ccard:hover { border-color: var(--gold-2); transform: translateY(-3px); }
+.ccard .dcard-icon { width: 48px; height: 48px; margin-bottom: 20px; }
+.ccard .dcard-icon svg { width: 22px; height: 22px; }
+.ccard h3 { font-size: 1.12rem; margin-bottom: .45em; }
+.ccard p { font-size: .95rem; margin: 0 0 14px; }
+.ccard .ticks { margin: 0; }
+.ccard .ticks li { font-size: .9rem; padding: 7px 0 7px 28px; }
+.ccard .ticks li::before { top: 15px; }
+.ccards-dark .ccard { background: var(--night-2); border-color: var(--hair); }
+.ccards-dark .ccard h3 { color: #fff; }
+.ccards-dark .ccard p { color: var(--mist); }
+.ccards-dark .dcard-icon svg { stroke: var(--gold-2); }
+.ccards-mini { grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.ccards-mini .ccard { padding: 24px 20px; }
+.ccards-mini .ccard h3 { font-size: 1rem; }
+.ccards-mini .ccard p { font-size: .88rem; margin: 0; }
+.partner-band { margin-top: 26px; background: var(--night); border: 1px solid var(--gold-2); padding: 34px 40px; display: flex; justify-content: space-between; align-items: center; gap: 30px; flex-wrap: wrap; }
+.partner-band h3 { color: #fff !important; font-size: 1.45rem; margin: 0 0 8px; }
+.partner-band p:not(.kicker) { color: var(--mist) !important; margin: 0; max-width: 640px; }
+.partner-band .kicker { color: var(--gold-2) !important; margin-bottom: 12px; }
+@media (max-width: 1180px) { .ccards-mini { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px) { .ccards, .ccards-mini { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .ccards, .ccards-mini { grid-template-columns: 1fr; } .partner-band { padding: 28px 24px; } }
+
 /* Responsive */
 @media (max-width: 1080px) {
   .svc-grid { grid-template-columns: repeat(2, 1fr); }
