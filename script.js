@@ -45,3 +45,33 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
   var note = document.getElementById('builder-note');
   if (note) note.hidden = false;
 })();
+
+// Contact form: "Book a Call" button in the header
+(function () {
+  var form = document.querySelector('form.form');
+  if (!form || new URLSearchParams(location.search).get('from') !== 'call') return;
+  if (form.message && !form.message.value) {
+    form.message.value = "Hi! I'd like to book a free call about a website for my business.\n\nBest days and times to reach me:\n\nA bit about my business:\n";
+  }
+  var note = document.getElementById('builder-note');
+  if (note) {
+    note.textContent = '✦ Booking a call: add your phone number and the best times to reach you, and we’ll call you within one business day.';
+    note.hidden = false;
+  }
+  if (form.phone) { form.phone.parentNode.firstChild.textContent = 'Phone (for your call)'; form.phone.required = true; }
+})();
+
+// Contact form: "Free AI Audit" buttons on the AI Solutions page
+(function () {
+  var form = document.querySelector('form.form');
+  if (!form || new URLSearchParams(location.search).get('from') !== 'audit') return;
+  if (form.service) form.service.value = 'A free AI audit';
+  if (form.message && !form.message.value) {
+    form.message.value = "Hi! I'd like a free AI audit for my business.\n\nMy website (if I have one):\n\nWhat takes up most of my time each week:\n";
+  }
+  var note = document.getElementById('builder-note');
+  if (note) {
+    note.textContent = '✦ Free AI audit: tell us a little about your business and we’ll send your report within a few business days.';
+    note.hidden = false;
+  }
+})();
